@@ -19,6 +19,9 @@ namespace Service.Services
             };
         }
 
-
+        public User[] UserLoginMethod(string email, string password)
+        {
+            return GetAll().Where(m => m.Email == email && m.Password == password).ToArray();            
+        }
     }
 }

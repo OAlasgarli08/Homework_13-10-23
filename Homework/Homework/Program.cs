@@ -8,3 +8,5 @@
 //studentController.SortByAge();
 //studentController.GetById();
 
+UserController userController = new UserController();
+userController.UserLoginDetails();
